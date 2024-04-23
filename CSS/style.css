@@ -38,17 +38,16 @@ a{
 }
 
 .icon{
-    
-    border: 2px black solid;
+    border: 2px rgb(0, 0, 0) solid;
     padding: 5px;
     border-radius: 40px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     width: 100px;
     height: 100px;
     margin: 20px;
     transition: 0.4s;
 }
+
 .icon:hover{
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 30px 10px;
 }
@@ -90,6 +89,11 @@ button{
     border-radius: 10px;
     padding: 10px;
     color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+#Entrar:hover{
+    background-color: black;
+    color: white;
 }
 
 /*DARK MODE*/
@@ -109,32 +113,54 @@ button{
 
 .darkmode{
     #box{
-        box-shadow: rgba(39, 39, 39, 0.35) 0px 5px 20px 10px;
-        background-color: rgba(2, 3, 15, 0.562);
+        box-shadow: rgba(43, 43, 43, 0.35) 0px 5px 20px 10px;
+        background-color: rgb(12, 13, 39);
         color: white;
     }
 }
+
 body.darkmode {
-    background-color: #020308;
+    background-color: #040611;
 }
+
 body.darkmode .icon:hover{
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 30px 10px;
 }
+
 body.darkmode a{
     color: white;
 }
+
 body.darkmode #dark{
     background-color: black;
     box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 8px 3px;
     border: white solid 2px;
 }
+
 body.darkmode #dark img{
     transform: scaleX(-1);
     filter: invert(100%);
 }
 
+body.darkmode .icon{
+
+    border: 2px rgb(0, 0, 0) solid;
+    filter: invert(100%);
+}
+
+body.darkmode .icon:hover{
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 30px 10px;
+}
+
 @media (orientation:portrait) {
+    
     #box{
-        width: 65%;
+        width: 100%;
+        
     }
+    #dark{
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
 }
