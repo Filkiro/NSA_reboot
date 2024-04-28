@@ -136,6 +136,10 @@ footer{
     color: white;
 }
 
+#imgs{
+    
+    filter: brightness(130%);
+}
 
     /*darkmode*/
 
@@ -164,7 +168,7 @@ body.darkmode fieldset{
 }
 body.darkmode #dark img{
     transform: scaleX(-1);
-    filter: invert(1);
+    filter: invert(100%);
 }
 
 body.darkmode nav{
@@ -174,7 +178,9 @@ body.darkmode nav{
 body.darkmode #altft{
     color: chartreuse;
 }
-
+body.darkmode #cps{
+    filter: contrast(190%);
+}
 
 
 
@@ -208,7 +214,7 @@ body.darkmode #altft{
     }
 
     img{
-        height: 100px;
+        height: 70px;
     }
 
 
@@ -218,7 +224,7 @@ body.darkmode #altft{
     ul::-webkit-scrollbar {
         height: 0px;
     }
-    
+
     #dark{
         top: 0px;
         cursor: pointer;
