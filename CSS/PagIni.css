@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    /*para a pagina inicial*/
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(163, 163, 162);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(77, 77, 77);
+    border-radius: 20px;
+  }
+
+  /*para o painel de noticias do section*/
+  #noticia::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #noticia::-webkit-scrollbar-track {
+    background: rgb(163, 163, 162);
+    border-radius: 20px;
+  }
+  
+  #noticia::-webkit-scrollbar-thumb {
+    background-color: rgb(77, 77, 77);
+    border-radius: 20px;
+  }
+
+
+
+body{
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: "Work Sans";
+    font-size: 19px;
+}
+#altft{
+    color: rgb(9, 124, 69);
+}
+
+nav{
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    border-radius: 20px;
+    box-shadow: rgba(43, 43, 43, 0.366) 0px 5px 20px 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+main{
+    margin: 20px;
+}
+ul{
+    padding-right: 40px;
+    margin: 0;
+}
+li{
+    border-radius: 19px;
+    padding: 6px;
+    display: inline-flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav{
+    transition: .5s;
+    border-radius: 15px;
+    padding: 7px;
+    color: white;
+}
+
+.nav:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+#logout{
+    color: red;
+    padding: 7px;
+    border-radius: 10px;
+    transition: .3s;
+    position: relative;
+}
+#logout:hover{
+    color: white;
+    background-color: red;
+}
+
+section{
+    align-items: start;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+fieldset{
+    margin: 2px;
+    border-radius: 10px;
+}
+#idAl{
+    height: 468px;
+    overflow-x: auto;
+}
+#ped{
+    height: 468px;
+    overflow-x: auto;
+}
+#not{
+    height: 468px;
+    overflow-x: auto;
+}
+#noticia{
+    height: 468px;
+    overflow-y: auto;
+}
+hr{
+    border: black 1px solid;
+    border-radius: 20px;
+}
+footer{
+    margin: 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+
+    /*darkmode*/
+
+#dark img{
+    height: 27px;
+    filter: invert(1);
+}
+#dark{
+    cursor: pointer;
+    top: 4px;
+    border-radius: 90px;
+    border: none;
+    position: relative;
+    background: none;
+    transition: 0.5s;
+}
+#dark:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+body.darkmode {
+    background-color: rgb(36, 36, 36);
+}
+body.darkmode fieldset{
+    color: white;
+}
+body.darkmode #dark img{
+    transform: scaleX(-1);
+    filter: invert(1);
+}
+
+body.darkmode nav{
+    box-shadow: rgba(112, 112, 112, 0.144) 0px 0px 20px 8px;
+}
+
+body.darkmode #altft{
+    color: chartreuse;
+}
+
+
+
+
+@media (orientation: portrait) {
+    
+    
+    nav{
+        height: 0%;
+        width: 90%;
+    }
+
+    section{
+        display: flex;
+        overflow: auto;
+        
+    }
+    #noticia{
+        height: 468px;
+        width: 480px;
+        overflow: auto;
+        text-align: justify;
+    }
+
+
+
+    ul{
+        align-items: safe;
+        display: flex;
+        justify-content: safe;
+        overflow: auto;
+    }
+
+    img{
+        height: 100px;
+    }
+
+
+
+
+    /*WebKit para mexer na scrollbar do overflow da ul da nav*/
+    ul::-webkit-scrollbar {
+        height: 0px;
+    }
+    
+    #dark{
+        top: 0px;
+        cursor: pointer;
+        border-radius: 90px;
+        border: none;
+        position: relative;
+        background: none;
+        transition: 0.5s;
+    }
+    }
+
+      /*esse é para a section onde esta as informações*/
+      section::-webkit-scrollbar {
+        height: 8px;
+        
+      }
+      
+      section::-webkit-scrollbar-track {
+        background: rgb(163, 163, 162);
+        border-radius: 20px;
+      }
+      
+      section::-webkit-scrollbar-thumb {
+        background-color: rgb(77, 77, 77);
+        border-radius: 20px;
+      }
+      
+
+
